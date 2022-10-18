@@ -1,0 +1,18 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Kaunter</h1>
+
+<p role="status">Kiraan semasa: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Sila tekan</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
